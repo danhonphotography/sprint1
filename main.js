@@ -1,9 +1,14 @@
-let userName = prompt("Welcome to Dan's site...What's your name?");
+let userName = prompt("Welcome to Dan's site...What's your first name?");
 console.log(userName);
 let elName = document.getElementById ("name");
 elName.innerHTML = userName;
 
-let userHome = prompt("Howdy! " + userName + "tell me, Where are you from?");
+let userLastname = promp("What is your last name?");
+console.log(userLastname);
+let elLastname = document.getElementById ("last name");
+elLastname.innerHTML = userLastname;
+
+let userHome = prompt("Howdy! " + userName + userLastname + "tell me, Where are you from?");
 console.log(userHome);
 let elHome = document.getElementById ("home");
 elHome.innerHTML = userHome;
